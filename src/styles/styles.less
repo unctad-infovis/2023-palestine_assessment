@@ -1,0 +1,55 @@
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Serif:600.css');
+
+@import 'colors.less';
+
+#app-root-2023-palestine_assessment .app {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  .charts_container {
+    border-bottom: 2px solid #000;
+    margin: 40px auto;
+    max-width: 700px;
+    padding-bottom: 20px;
+    .chart_selection_container {
+      margin-bottom: 20px;
+      .info_text {
+        p {
+          color: #777;
+          font-size: 14px;
+          margin: 0 0 5px 0;
+          text-transform: uppercase;
+        }
+      }
+      .button_container {
+        display: inline-block;
+        margin-right: 10px;
+        button {
+          background-color: @ungrey;
+          border: 1px solid #ccc;
+          box-shadow: 2px 2px 10px #ccc;
+          color: #fff;
+          cursor: pointer;
+          padding: 10px 20px;
+          &:hover {
+            background-color: @unblue;
+          }
+          &.active {
+            background-color: @unblue;
+            cursor: default;
+          }
+        }
+      }
+    }
+    .chart_wrapper {
+      margin: 20px auto;
+      min-height: 857px;
+      .chart_container {
+        margin: auto auto;
+        max-width: 700px;
+        min-height: 857px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@import 'basics.less';
